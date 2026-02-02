@@ -1,3 +1,53 @@
+// WhatsApp Business Configuration
+// IMPORTANTE: Cambia estos datos con la información de tu cliente
+export const whatsappConfig = {
+  coffee: {
+    name: 'Cold Brew Coffee',
+    phone: '18095551234', // Formato: código país + número (sin +, espacios ni guiones)
+    welcomeMessage: '¡Hola! 👋 ¿Te gustaría ordenar nuestro delicioso Cold Brew?',
+    chatWelcome: '¡Bienvenido a Cold Brew! ☕ Estamos aquí para atenderte. ¿En qué podemos ayudarte hoy?',
+    responseTime: 'Responde en ~5 minutos',
+    location: 'Zona Colonial, Santo Domingo',
+    locationUrl: 'https://maps.google.com/?q=Zona+Colonial+Santo+Domingo'
+  },
+  tech: {
+    name: 'Tech Solutions',
+    phone: '18095551234',
+    welcomeMessage: '¡Hola! 🚀 ¿Listo para transformar tu negocio con tecnología?',
+    chatWelcome: 'Bienvenido a Tech Solutions. Estamos listos para ayudarte con tus proyectos tecnológicos.',
+    responseTime: 'Responde en ~10 minutos',
+    location: 'Piantini, Santo Domingo',
+    locationUrl: 'https://maps.google.com/?q=Piantini+Santo+Domingo'
+  },
+  fitness: {
+    name: 'FitPower Gym',
+    phone: '18095551234',
+    welcomeMessage: '¡Hey! 💪 ¿Listo para comenzar tu transformación?',
+    chatWelcome: '¡Bienvenido a FitPower! Tu mejor versión comienza hoy. ¿Cómo podemos ayudarte?',
+    responseTime: 'Responde en ~15 minutos',
+    location: 'Bella Vista, Santo Domingo',
+    locationUrl: 'https://maps.google.com/?q=Bella+Vista+Santo+Domingo'
+  },
+  restaurant: {
+    name: 'Sabores Auténticos',
+    phone: '18095551234',
+    welcomeMessage: '¡Hola! 🍽️ ¿Listo para una experiencia gastronómica única?',
+    chatWelcome: 'Bienvenido a Sabores Auténticos. ¿Te gustaría hacer una reservación o ver nuestro menú?',
+    responseTime: 'Responde en ~5 minutos',
+    location: 'Gazcue, Santo Domingo',
+    locationUrl: 'https://maps.google.com/?q=Gazcue+Santo+Domingo'
+  },
+  beauty: {
+    name: 'Zen Beauty Spa',
+    phone: '18095551234',
+    welcomeMessage: '¡Hola! ✨ ¿Lista para consentirte?',
+    chatWelcome: 'Bienvenida a Zen Beauty Spa. Tu momento de relajación está a un mensaje de distancia.',
+    responseTime: 'Responde en ~10 minutos',
+    location: 'Naco, Santo Domingo',
+    locationUrl: 'https://maps.google.com/?q=Naco+Santo+Domingo'
+  }
+};
+
 // Themes configuration
 export const themes = {
   coffee: {

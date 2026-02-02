@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useTheme } from './hooks/useTheme';
-import { themes } from './data/content';
+import { themes, whatsappConfig } from './data/content';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -8,10 +8,12 @@ import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import ThemeSwitcher from './components/ThemeSwitcher';
+import WhatsAppWidget from './components/WhatsAppWidget';
 
 function App() {
   const { currentTheme, changeTheme, isDark, toggleDarkMode } = useTheme();
   const themeData = themes[currentTheme];
+  const whatsappData = whatsappConfig[currentTheme];
 
   useEffect(() => {
     // Apply theme class to body
@@ -43,6 +45,11 @@ function App() {
       <ThemeSwitcher 
         currentTheme={currentTheme}
         changeTheme={changeTheme}
+      />
+      
+      <WhatsAppWidget 
+        businessInfo={whatsappData}
+        currentTheme={currentTheme}
       />
     </div>
   );

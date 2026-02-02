@@ -44,6 +44,13 @@ Landing page modular y profesional desarrollada con **React + Vite + Tailwind CS
 5. **CTA** - Call-to-action con formulario
 6. **Footer** - Footer completo con enlaces
 7. **ThemeSwitcher** - Panel lateral para cambiar temas
+8. **WhatsAppWidget** - 🆕 Sistema completo de WhatsApp Business con:
+   - Botón flotante inteligente
+   - Burbuja de bienvenida automática
+   - Panel de chat con mensajes rápidos
+   - Mensajes contextuales por industria
+   - Integración con llamadas y ubicación
+   - 5 mensajes predefinidos por tema
 
 ---
 
@@ -121,9 +128,10 @@ landing-premium/
 │   │   ├── Testimonials.jsx
 │   │   ├── CTA.jsx
 │   │   ├── Footer.jsx
-│   │   └── ThemeSwitcher.jsx
+│   │   ├── ThemeSwitcher.jsx
+│   │   └── WhatsAppWidget.jsx  # 🆕 Widget de WhatsApp
 │   ├── data/
-│   │   └── content.js     # Contenido y configuración de temas
+│   │   └── content.js     # Contenido y configuración de temas + WhatsApp
 │   ├── hooks/
 │   │   └── useTheme.js    # Hook personalizado para temas
 │   ├── App.jsx            # Componente principal
@@ -133,8 +141,47 @@ landing-premium/
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
-└── postcss.config.js
+├── postcss.config.js
+├── README.md              # Documentación principal
+├── PERSONALIZACION.md     # Guía de personalización
+├── PARA_CLIENTES.md       # Guía para presentar a clientes
+├── WHATSAPP_GUIA.md       # 🆕 Guía completa de WhatsApp
+└── RESUMEN_EJECUTIVO.md   # Overview del proyecto
 ```
+
+---
+
+## 📱 Configuración de WhatsApp Business
+
+### Setup Básico (2 minutos)
+
+Edita el archivo `src/data/content.js`:
+
+```javascript
+export const whatsappConfig = {
+  coffee: {
+    phone: '18095551234', // TU NÚMERO (código país + número)
+    name: 'Tu Negocio',
+    welcomeMessage: '¡Hola! 👋 Tu mensaje breve aquí',
+    // ... más configuraciones
+  }
+}
+```
+
+**⚠️ Formato del número:**
+- ✅ Correcto: `18095551234` (sin +, sin espacios, sin guiones)
+- ❌ Incorrecto: `+1 809 555 1234` o `(809) 555-1234`
+
+**Ver guía completa:** `WHATSAPP_GUIA.md`
+
+### Características del Widget
+
+- 🟢 Botón flotante con indicador online
+- 💬 Burbuja de bienvenida automática (aparece a los 3 seg)
+- 📱 Panel de chat completo con mensajes rápidos
+- 🎯 Mensajes contextuales según hora e industria
+- 📞 Botones de llamar y ver ubicación
+- ✨ Animaciones suaves y responsive
 
 ---
 
