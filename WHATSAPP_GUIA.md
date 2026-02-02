@@ -137,14 +137,17 @@ phone: '809-555-1234'     // NO empieza sin código país
 **Archivo:** `src/components/WhatsAppWidget.jsx` (línea ~118)
 
 ```jsx
-// Por defecto: bottom-8 right-8
-className="fixed bottom-8 right-8 z-50..."
+// Por defecto: bottom-24 right-8 (arriba del botón de temas)
+className="fixed bottom-24 right-8 z-40..."
 
-// Izquierda abajo:
-className="fixed bottom-8 left-8 z-50..."
+// Si quieres moverlo a la izquierda:
+className="fixed bottom-24 left-8 z-40..."
 
-// Derecha arriba:
-className="fixed top-8 right-8 z-50..."
+// Más abajo (pero cuidado con superposición):
+className="fixed bottom-8 left-8 z-40..."
+
+// NOTA: El botón de temas está en bottom-8 right-8 z-50
+// WhatsApp está en bottom-24 right-8 z-40 para evitar superposición
 ```
 
 ### Cambiar Tiempo de Aparición de Burbuja

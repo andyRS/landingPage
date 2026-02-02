@@ -116,7 +116,7 @@ const WhatsAppWidget = ({ businessInfo, currentTheme }) => {
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-8 right-8 z-50 w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 text-white rounded-full shadow-2xl hover:shadow-3xl transition-shadow flex items-center justify-center group"
+        className="fixed bottom-8 right-8 z-40 w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 text-white rounded-full shadow-2xl hover:shadow-3xl transition-shadow flex items-center justify-center group"
         aria-label="Abrir WhatsApp"
       >
         <AnimatePresence mode="wait">

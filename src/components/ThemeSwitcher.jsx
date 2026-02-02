@@ -21,7 +21,7 @@ const ThemeSwitcher = ({ currentTheme, changeTheme }) => {
         onClick={() => setIsOpen(true)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-8 right-8 z-50 p-4 bg-gradient-to-br from-primary-500 to-accent text-white rounded-full shadow-2xl hover:shadow-3xl transition-shadow"
+        className="fixed bottom-8 left-8 z-50 p-4 bg-gradient-to-br from-primary-500 to-accent text-white rounded-full shadow-2xl hover:shadow-3xl transition-shadow"
         aria-label="Change theme"
       >
         <Palette className="w-6 h-6" />
@@ -47,11 +47,11 @@ const ThemeSwitcher = ({ currentTheme, changeTheme }) => {
 
             {/* Panel */}
             <motion.div
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: -400, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              exit={{ x: 400, opacity: 0 }}
+              exit={{ x: -400, opacity: 0 }}
               transition={{ type: "spring", damping: 25 }}
-              className="fixed top-0 right-0 h-full w-full max-w-md bg-white dark:bg-gray-900 shadow-2xl z-50 overflow-y-auto"
+              className="fixed top-0 left-0 h-full w-full max-w-md bg-white dark:bg-gray-900 shadow-2xl z-50 overflow-y-auto"
             >
               <div className="p-8">
                 {/* Header */}
